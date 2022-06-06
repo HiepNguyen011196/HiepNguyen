@@ -1,10 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <style>
+        table {
+            width: 500px;
+            height: 350px;
+            background-color: lightyellow;
+        }
+        input.DiaChi {
+            width: 250px;
+            height: 100px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>TaoFormDonGian2</title>
 </head>
 <body>
-$END$
+  <form action="codegym.vn" method="post">
+      <table>
+          <tr style="color: blue">
+              <th style="background-color: #76a0a7" font colspan="2" align="left">ĐĂNG KÝ HỌC VIÊN</th>
+          </tr>
+          <tr>
+              <td style="color: mediumblue" align="left">Họ và tên</td>
+              <td><input type="text" name="Họ Tên" style="width: 300px"></td>
+          </tr>
+          <tr>
+              <td style="color: mediumblue" align="left">Ngày sinh</td>
+              <td><input type="text" name="Ngày sinh" style="width: 100px"></td>
+          </tr>
+          <tr>
+              <td style="color: mediumblue" align="left">Giới tính</td>
+              <td><input type="radio" name="Gender" value="Nam">Nam
+                  <input type="radio" name="Gender" value="Nữ">Nữ
+              </td>
+          </tr>
+          <tr>
+              <td style="color: mediumblue" align="left">Địa chỉ</td>
+              <td><input type="text" name="address" class="DiaChi"></td>
+          </tr>
+          <tr>
+              <td style="color: mediumblue" align="left">lớp</td>
+              <td><select>
+                  <option value="lopA"> Lớp A</option>
+                  <option value="lopB"> Lớp B</option>
+                  <option value="lopC"> Lớp C</option>
+              </select></td>
+          </tr>
+          <tr>
+              <td style="color: mediumblue" align="left">Email</td>
+              <td><input type="text" name="email"></td>
+          </tr>
+          <tr>
+              <td style="color: mediumblue" align="left">Điện thoại</td>
+              <td><input type="number" name="DienThoai"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td>
+                  <input type="submit" value="Đăng ký">
+                  <input type="reset" value="Nhập lại">
+              </td>
+          </tr>
+      </table>
+  </form>
 </body>
 </html>
