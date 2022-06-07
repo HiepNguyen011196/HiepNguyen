@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChuyenDoiTienTe</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="number" name="number" id="soTien"></td>
+            <td><select id="donVi1">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select></td>
+            <td><select id="donVi2">
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>
+            </select></td>
+            <td><button onclick="convertFunc()">Convert</button></td>
+        </tr>
+</table>
+</body>
+    <script>
+        function convertFunc() {
+            let soTien=document.getElementById("soTien").value;
+            let donVi1=document.getElementById("donVi1").value;
+            let donVi2=document.getElementById("donVi2").value;
+            if (donVi1 == "VND" && donVi2 == "USD") {
+                document.write("Result: " +"$"+(soTien/23000));
+            }
+            if (donVi2 == "VND" && donVi1 == "USD")
+                document.write("Result: " + (soTien*23000));
+            if (donVi1 == "VND" && donVi2 == "VND"){
+                document.write("Result: " + soTien +"VND")
+            }
+            if (donVi1 == "USD" && donVi2 == "USD") {
+                document.write("Result: "+"$"+ soTien)
+            }
+        }
+    </script>
+</html>
