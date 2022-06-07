@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UngDungMayTinh</title>
+</head>
+<body>
+<h2>Calculator</h2>
+    <form>
+        <input type="number" name="nhapSo1" id="So1" placeholder="Nhập số thứ nhất">
+        <input type="number" name="nhapSo2" id="So2" placeholder="Nhập số thứ hai">
+        <br>
+        <br>
+        <button type="button" onclick="Calculator1()">Addition(+)</button>
+        <button type="button" onclick="Calculator2()">Subtraction(-)</button>
+        <button type="button" onclick="Calculator3()">Multiplication(*)</button>
+        <button type="button" onclick="Calculator4()">Division(/)</button>
+    </form>
+</body>
+    <script>
+        function Calculator1() {
+            let number1=document.getElementById("So1").value;
+            number1=parseInt(number1);
+            let number2=document.getElementById("So2").value;
+            number2=parseInt(number2);
+            document.write("Kết quả là : "+(number1+number2))
+        }
+        function Calculator2() {
+            let number1=document.getElementById("So1").value;
+            number1=parseInt(number1);
+            let number2=document.getElementById("So2").value;
+            number2=parseInt(number2);
+            document.write("Kết quả là : "+(number1-number2))
+        }
+        function Calculator3() {
+            let number1=document.getElementById("So1").value;
+            number1=parseInt(number1);
+            let number2=document.getElementById("So2").value;
+            number2=parseInt(number2);
+            document.write("Kết quả là : "+(number1*number2))
+        }
+        function Calculator4() {
+            let number1=document.getElementById("So1").value;
+            number1=parseInt(number1);
+            let number2=document.getElementById("So2").value;
+            number2=parseInt(number2);
+            document.write("Kết quả là : "+(number1/number2))
+        }
+    </script>
+</html>
